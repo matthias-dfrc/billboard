@@ -10,4 +10,5 @@ app.on('ready', () => {
     alwaysOnTop: true
   });
   mainWindow.loadURL('file://'+__dirname+'/main.html');
+  mainWindow.setAlwaysOnTop(true);
 });
