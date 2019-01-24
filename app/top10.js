@@ -44,7 +44,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
         document.querySelector('#countries').appendChild(div);
 
         // printing top 10 countries
-        var text = document.createTextNode((i+1) + ". " + nationality + ":  " + visitorsNum + "visitors");
+        var text = document.createTextNode("  " + (i+1) + ". " + nationality + ":  " + visitorsNum + "visitors");
         div.appendChild(text);
         document.querySelector('#countries').appendChild(div);
       }

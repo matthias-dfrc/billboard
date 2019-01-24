@@ -8,6 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <style>
+    html, body { height: 100%; }
+    .container {
+      min-height: 90%;
+      overflow: hidden%;
+    }
+    </style>
+
     <title></title>
   </head>
   <body>
@@ -18,6 +26,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type='text/javascript' src='region_1.js'></script>
 
+    <div class="container fill">
     <!-- printing Region name -->
       <div class="container">
         <div class="row">
@@ -28,10 +37,10 @@
       </div>
 
     <!-- printing Sap visitorsNumber -->
-      <div class="container">
+      <div class="container ">
         <div class="row">
           <div class="col"></div>
-          <div class="col-3" id="sapNumber"></div>
+          <div class="col-3" id="sapNumber"><strong></strong></div>
           <div class="col-3" id="currentTime"></div>
           <div class="col"></div>
         </div>
@@ -56,6 +65,10 @@
             <div class="col"></div>
           </div>
       </div>
+    </div>
+      <!-- footer -->
+      <div class="footer-copyright text-center py-3">
+        <img src="../libs/imgs/dfrc.png" alt="DFRC LOGO" height="42" width="42">
+      </div>
 
-    <img src="../libs/imgs/dfrc.png" alt="DFRC LOGO" height="42" width="42">
   </body>
