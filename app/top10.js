@@ -23,7 +23,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
     // cheking data ojbect
     console.log(visitorCount);
     console.log(sortedVisitorCount);
-    console.log(data[0].data[0].visitorCount[0].populationType.countryName);
+    console.log(data[0].data[0].visitorCount[0].populationType.countryIso);
 
 
     // display Top10 countries function
@@ -31,12 +31,22 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 
       for (var i = 0; i < 10; i++) {
         var nationality = data[0].data[0].visitorCount[i].populationType.countryName
+        var nationalityIcon = data[0].data[0].visitorCount[i].populationType.countryIso
         var visitorsNum = data[0].data[0].visitorCount[i].numVisitors
-        var li = document.createElement('li');
-        var text = document.createTextNode((i+1) + ". " + nationality + ":  " + visitorsNum + "visitors");
 
-        li.appendChild(text);
-        document.querySelector('ul').appendChild(li);
+        // declare container variable
+        var div = document.createElement('div');
+
+        //creating country flag image
+        var flagImage = new Image(20, 15); // ( , ) width and height
+        flagImage.src = '../libs/Countries/' + nationalityIcon +'.imageset/' + nationalityIcon + '.png';
+        div.appendChild(flagImage);
+        document.querySelector('#countries').appendChild(div);
+
+        // printing top 10 countries
+        var text = document.createTextNode((i+1) + ". " + nationality + ":  " + visitorsNum + "visitors");
+        div.appendChild(text);
+        document.querySelector('#countries').appendChild(div);
       }
     }
   // activate displayTop10 function

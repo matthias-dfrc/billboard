@@ -19,14 +19,12 @@
 </div>
 
 <div class="mySlides fade">
-  <iframe src="app/visitorCount.html" width="100%" height="100%" frameborder="0"></iframe>
-  <div class="text">Caption Two</div>
+  <iframe src="app/region_1.html" width="100%" height="100%" frameborder="0"></iframe>
 </div>
 
 <!-- when it doesn't connect with internet -->
 <div class="disconnected">
   <iframe src="app/disconnected.html" width="100%" height="100%" frameborder="0"></iframe>
-  <div class="text">Caption Two</div>
 </div>
 
 </div>
@@ -34,7 +32,6 @@
 
 <!-- number of dots provide slide turning-->
 <div style="text-align:center">
-  <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
 </div>
@@ -48,7 +45,7 @@ setInterval(function(){
 
       function showSlides() {
         var i;
-        var slides = document.getElementsByClassName("mySlides");
+        var slides = document.getElementsByClassName("mySlides fade");
         var dots = document.getElementsByClassName("dot");
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
@@ -60,13 +57,13 @@ setInterval(function(){
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image time e.g.2000 = 2 seconds
+        setTimeout(showSlides, 5000); // Change image time e.g.2000 = 2 seconds
       }
     }else{
       // when the internet disconnect, it call the disconnected.html and show it
       document.getElementsByClassName("disconnected").style.display;
     }
-},1000); // checking internect connection interval time 1000 = 1sec
+},10000); // checking internect connection interval time 1000 = 1sec
 </script>
 
 
