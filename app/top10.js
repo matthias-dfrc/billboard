@@ -11,7 +11,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
   request.onload = function () {
     // begin accessing JSON data here
     var data = JSON.parse(this.response);
-
+    console.log(data);
     // sorting top 10 Countries
     var visitorCount = data[0].data[0].visitorCount;
     sortedVisitorCount = visitorCount.sort(function(a, b) {

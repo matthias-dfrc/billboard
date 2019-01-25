@@ -11,60 +11,98 @@
 
 <body>
 
-<div class="slideshow-container">
-<!-- when the internet connect, it shows below html pages -->
-<div class="mySlides fade">
-  <iframe src="app/top10.html" width="100%" height="100%" frameborder="0"></iframe>
-  <!-- <div class="text">Caption Text</div> -->
-</div>
+  <div class="slideshow-container">
+  <!-- when the internet connect, it shows below html pages -->
+    <div class="mySlides fade">
+      <iframe src="app/top10.html" width="100%" height="100%" frameborder="0"></iframe>
+      <!-- <div class="text">Caption Text</div> -->
+    </div>
+    <!-- regison 1  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_1.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <!-- regison 2  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_2.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <!-- regison 3  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_3.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <!-- regison 4  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_4.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <!-- regison 5  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_5.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <!-- regison 6  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_6.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <!-- regison 7  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_7.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <!-- regison 8  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_8.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <!-- regison 9  -->
+    <div class="mySlides fade">
+      <iframe src="app/region_9.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
 
-<div class="mySlides fade">
-  <iframe src="app/region_1.html" width="100%" height="100%" frameborder="0"></iframe>
-</div>
+    <!-- when it doesn't connect with internet -->
+    <div class="disconnected">
+      <iframe src="app/disconnected.html" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
 
-<!-- when it doesn't connect with internet -->
-<div class="disconnected">
-  <iframe src="app/disconnected.html" width="100%" height="100%" frameborder="0"></iframe>
-</div>
+  </div>
+  <br>
 
-</div>
-<br>
 
-<!-- number of dots provide slide turning-->
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
+  <!-- main script for slide show and cheking connection -->
+  <script>
+  var slideIndex = 0;
+  showSlides();
 
-<!-- main script for slide show and cheking connection -->
-<script>
-setInterval(function(){
-    if(navigator.onLine){
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides fade");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5000); // Change image time e.g.2000 = 2 seconds
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
       }
-    }else{
-      // when the internet disconnect, it call the disconnected.html and show it
-      document.getElementsByClassName("disconnected").style.display;
+    slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+
+      //reconnecting event when the internect is offline
+      if (navigator.onLine === false) {
+        disconnectedPage();
+        function disconnectedPage() {
+              setTimeout(reconnecting, 5000); // setting time for try reconnecting
+              slides[slideIndex-1].style.display = "none";
+              var disconnectedPage = document.getElementsByClassName("disconnected")
+              disconnectedPage.style.display = "block";
+            }
+      }
+
+
+
+
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+
+
+
+    function reconnecting() {
+      location.reload();//checking internect connection interval time 1000 = 1sec
     }
-},10000); // checking internect connection interval time 1000 = 1sec
-</script>
+
+  </script>
 
 
 </body>
