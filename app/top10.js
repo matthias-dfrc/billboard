@@ -32,7 +32,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
     // display Top10 countries function
     function displayTop10() {
       //loop for listing top 10 countries
-      for (var i = 0; i < 10; i++) {
+      for (var i = 0; i < 5; i++) {
         var nationality = data[0].data[0].visitorCount[i].populationType.countryName
         var nationalityIcon = data[0].data[0].visitorCount[i].populationType.countryIso
         var visitorsNum = data[0].data[0].visitorCount[i].numVisitors

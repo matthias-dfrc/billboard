@@ -1,19 +1,26 @@
 {
-  "name": "prototype",
+  "name": "BIllboard_Prototype_1.0",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "electron": "electron ."
+    "electron": "electron .",
+    "dist": "build"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "electron": "^4.0.1",
-    "electron-log": "^2.2.17",
-    "react-slideshow-image": "^1.0.10"
+    "electron-log": "^2.2.17"
   },
-  "devDependencies": {
+  "devDependencies": {  
+    "electron": "^4.0.1",
+    "asar": "^0.13.1",
+    "electron-builder": "^20.38.5",
     "gulp": "^4.0.0"
+  },
+  "build": {
+    "appId": "DFRC.matthias",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
   }
 }
