@@ -12,6 +12,7 @@
 <body>
 
   <div class="slideshow-container">
+
   <!-- when the internet connect, it shows below html pages -->
     <div class="mySlides fade">
       <iframe src="app/top10.html" width="100%" height="100%" frameborder="0"></iframe>
@@ -54,7 +55,7 @@
       <iframe src="app/region_9.html" width="100%" height="100%" frameborder="0"></iframe>
     </div>
 
-    <!-- when it doesn't connect with internet -->
+    <!-- it will be shown, when the internet is offline -->
     <div class="disconnected">
       <iframe src="app/disconnected.html" width="100%" height="100%" frameborder="0"></iframe>
     </div>
@@ -62,48 +63,8 @@
   </div>
   <br>
 
-
-  <!-- main script for slide show and cheking connection -->
-  <script>
-  var slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-    slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-
-      //reconnecting event when the internect is offline
-      if (navigator.onLine === false) {
-        disconnectedPage();
-        function disconnectedPage() {
-              setTimeout(reconnecting, 5000); // setting time for try reconnecting
-              slides[slideIndex-1].style.display = "none";
-              var disconnectedPage = document.getElementsByClassName("disconnected")
-              disconnectedPage.style.display = "block";
-            }
-      }
-
-
-
-
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
-
-
-
-
-    function reconnecting() {
-      location.reload();//checking internect connection interval time 1000 = 1sec
-    }
-
-  </script>
-
+  <!-- link to slideshow.js for slide show and cheking connection -->
+  <script type='text/javascript' src='slideshow.js'></script>
 
 </body>
 </html>

@@ -21,8 +21,8 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
         // write on the HTML file about Visitor number of SAP API
         var sapNum = data[0].uniqueCount
 
-        var newtext_1 = document.createTextNode(sapNum),
-        sapText = document.getElementById("sapNumber");
+        var newtext_1 = document.createTextNode(sapNum);
+        var sapText = document.getElementById("sapNumber");
         sapText.appendChild(newtext_1);
 
         // wirte on the HTML file about currenttime
@@ -30,7 +30,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
         var currentMinutes = selectedDay.getMinutes();
 
         var newtext_2 = document.createTextNode(" " + currentHour + ":" + currentMinutes);
-        currentTimeText = document.getElementById("currentTime");
+        var currentTimeText = document.getElementById("currentTime");
         currentTimeText.appendChild(newtext_2);
 
     }
@@ -41,8 +41,21 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
       // begin accessing JSON data here
       var data = JSON.parse(this.response);
 
+      // write on the HTML FILE about today visitor number of Overview API
+      var todayNum = data[0].visitorsNumber
+      var todayAvgNum = data[0].visitorsNumber
+
+      var newText_1 = document.createTextNode(todayNum);
+      var newText_2 = document.createTextNode("(" + todayAvgNum + ")");
+      var todayNumText = document.getElementById("todayNumber");
+      var todayAvgNumText = document.getElementById("todayAvgNumber");
+      todayNumText.appendChild(newText_1);
+      todayAvgNumText.appendChild(newText_2);
+
+
        // write on the HTML FILE about Monthly visitor number of Overview API
        var monthlyNum = data[0].visitorsNumber
+
        var div = document.createElement('div');
        var monthlyNumText = document.createTextNode(monthlyNum);
        div.appendChild(monthlyNumText);

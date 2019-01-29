@@ -1,6 +1,8 @@
 // Auto selecting day variable for AIP
 var selectedDay = new Date();
-selectedDay.setDate(selectedDay.getDate() - 1);
+// returing yesterdate
+selectedDay.setDate(selectedDay.getDate() - 2);
+// sorting to ISO8601 and year--month--day
 var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 
   // using API
@@ -12,6 +14,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
     // begin accessing JSON data here
     var data = JSON.parse(this.response);
     console.log(data);
+
     // sorting top 10 Countries
     var visitorCount = data[0].data[0].visitorCount;
     sortedVisitorCount = visitorCount.sort(function(a, b) {
@@ -28,7 +31,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 
     // display Top10 countries function
     function displayTop10() {
-
+      //loop for listing top 10 countries
       for (var i = 0; i < 10; i++) {
         var nationality = data[0].data[0].visitorCount[i].populationType.countryName
         var nationalityIcon = data[0].data[0].visitorCount[i].populationType.countryIso
