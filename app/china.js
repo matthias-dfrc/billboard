@@ -23,11 +23,6 @@ request.onload = function () {
     return bNum - aNum;
   });
 
-  // cheking data ojbect
-  console.log(visitorCount);
-  console.log(sortedVisitorCount);
-  console.log(data[0].data[0].visitorCount[0].populationType.countryIso);
-
 
   // display Top10 countries function
   function displayCountry() {
