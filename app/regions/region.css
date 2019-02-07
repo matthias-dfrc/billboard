@@ -1,0 +1,21 @@
+.body { height: 100%; }
+
+.container {
+  min-height: 85%;
+  overflow: hidden%;
+  font-size: 42px;
+}
+
+#regionName {
+  font-family: Impact, Charcoal, sans-serif
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: white;
+   text-align: center;
+}

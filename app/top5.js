@@ -17,20 +17,21 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 
     // sorting top 10 Countries
     var visitorCount = data[0].data[0].visitorCount;
+    console.log(visitorCount);
+
     sortedVisitorCount = visitorCount.sort(function(a, b) {
       var aNum = parseInt(a.numVisitors);
       var bNum = parseInt(b.numVisitors);
       return bNum - aNum;
     });
+    console.log(sortedVisitorCount);
 
     // cheking data ojbect
-    console.log(visitorCount);
-    console.log(sortedVisitorCount);
     console.log(data[0].data[0].visitorCount[0].populationType.countryIso);
 
 
-    // display Top10 countries function
-    function displayTop10() {
+    // display Top5 countries function
+    (function displayTop10() {
       //loop for listing top 10 countries
       for (var i = 0; i < 5; i++) {
         var nationality = data[0].data[0].visitorCount[i].populationType.countryName
@@ -39,20 +40,22 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 
         // declare container variable
         var div = document.createElement('div');
+        var listing = document.getElementById('countries');
 
         //creating country flag image
-        var flagImage = new Image(40, 30); // ( , ) width and height
+        var flagImage = new Image(50, 35); // ( , ) width and height
         flagImage.src = '../libs/Countries/' + nationalityIcon +'.imageset/' + nationalityIcon + '.png';
         div.appendChild(flagImage);
         document.querySelector('#countries').appendChild(div);
 
         // printing top 10 countries
-        var text = document.createTextNode("  " + (i+1) + ". " + nationality + ":  " + visitorsNum + "   visitors");
-        div.appendChild(text);
-        document.querySelector('#countries').appendChild(div);
+          var text = document.createTextNode("  " + (i+1) + ". " + nationality + ":  " + visitorsNum + "   visitors");
+          div.appendChild(text);
+          document.getElementById("countries").style.marginTop = "100px";
+          document.querySelector('#countries').appendChild(div);
+
+
       }
-    }
-  // activate displayTop10 function
-  displayTop10();
+    }) ();
   }
   request.send();
