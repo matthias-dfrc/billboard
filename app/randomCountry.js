@@ -33,7 +33,6 @@ request.onload = function () {
 
       var nationality = data[0].data[0].visitorCount[randomCountryNumber].populationType.countryName;
       var nationalityIcon = data[0].data[0].visitorCount[randomCountryNumber].populationType.countryIso;
-        console.log(nationality);
           // declare container variable
           var div1 = document.createElement('div');
           var div2 = document.createElement('div');

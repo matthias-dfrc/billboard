@@ -11,9 +11,22 @@
       <style>
       html, body { height: 100%; }
       .container {
-        min-height: 90%;
-        overflow: hidden%;
+        min-height: 100%;
+        overflow: hidden;
       }
+
+        .titleDisconnected {
+          font-size: 100px;
+          font-family: Impact, Charcoal, sans-serif;
+          padding-top: 40px;
+        }
+
+        .reconnecting {
+          font-size: 40px;
+          font-family: Charcoal, sans-serif;
+        }
+
+
       </style>
     <title>disconnected!!</title>
 
@@ -25,17 +38,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-      <!-- title top 10 -->
-      <div class="container fill">
-          <div class="text-center mt-4">
-            <h2>disconnected</h2>
-            <h5>We are checking online connection every 5Sec</h5>
-          </div>
+
+
+    <div class="container fill">
+      <!-- title disconnected -->
+      <div class="row">
+        <div class="titleDisconnected container text-center text-center mt-5 font-weight-bold">DISCONNECTED</div>
       </div>
 
-      <!-- footer -->
-      <div class="footer-copyright text-center py-3">
-        <img src="../libs/imgs/dfrc.jpg" alt="DFRC LOGO" height="42" width="42">
+      <!-- reconnecting -->
+      <div class="container">
+        <div class="row">
+          <div class="reconnecting container text-center text-center mt-5 font-weight-bold">We are checking online connection every 5Sec</div>
+        </div>
       </div>
+
+    </div>
+
+
+
   </body>
 </html>

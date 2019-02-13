@@ -3,11 +3,41 @@
   <component name="ChangeListManager">
     <list default="true" id="24ba6dec-e128-485f-8e6a-4563de01d776" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/disconnected.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/disconnected.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/randomCountry.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/randomCountry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/randomCountry.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/randomCountry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/regions/region.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/regions/region_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/regions/region_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/regions/region_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/regions/region_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/regions/region_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/regions/region_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/regions/region_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/top11to15.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/top11to15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/top11to15.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/top11to15.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/top16to20.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/top16to20.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/top5.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/top5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/top5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/top5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/top6to10.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/top6to10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/top6to10.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/top6to10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/BG.imageset/BG.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/BG.imageset/BG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/CZ.imageset/CZ.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/CZ.imageset/CZ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/DE.imageset/DE.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/DE.imageset/DE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/DK.imageset/DK.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/DK.imageset/DK.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/ES.imageset/ES.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/ES.imageset/ES.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/GB.imageset/GB.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/GB.imageset/GB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/IT.imageset/IT.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/IT.imageset/IT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/MY.imageset/MY.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/MY.imageset/MY.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/NO.imageset/NO.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/NO.imageset/NO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/NZ.imageset/NZ.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/NZ.imageset/NZ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/RU.imageset/RU.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/RU.imageset/RU.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Countries/US.imageset/US.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/US.imageset/US.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/slideshow.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,24 +47,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="region_3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/regions/region_3.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="slideshow.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/slideshow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="region.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/regions/region.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -42,22 +60,24 @@
       <file leaf-file-name="region_2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/regions/region_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+            <state relative-caret-position="385">
+              <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="region_1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/regions/region_1.html">
+      <file leaf-file-name="region_3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/regions/region_3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="347">
+              <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,46 +86,51 @@
       <file leaf-file-name="region_4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/regions/region_4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="347">
+              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randomCountry.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/randomCountry.js">
+      <file leaf-file-name="top16to20.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/top16to20.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="106" selection-start-line="42" selection-start-column="106" selection-end-line="42" selection-end-column="106" />
+            <state relative-caret-position="427">
+              <caret line="58" column="65" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randomCountry.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/randomCountry.html">
+      <file leaf-file-name="region_5.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/regions/region_5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+            <state relative-caret-position="1387">
+              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slideshow.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/slideshow.js">
+      <file leaf-file-name="slideshow_old.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slideshow_old.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="top5.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/top5.html">
+      <file leaf-file-name="region_3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/regions/region_3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1278">
-              <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+            <state relative-caret-position="-29">
+              <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+              <folding>
+                <element signature="e#945#964#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,13 +138,43 @@
       <file leaf-file-name="top5.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/top5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state>
+              <caret selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="region_6.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/regions/region_6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getElementsByClassName</find>
+      <find>top5</find>
+      <find>slideshow-container</find>
+      <find>console</find>
+      <find>red</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/regions/region_1.js" />
         <option value="$PROJECT_DIR$/app/regions/region_3.js" />
         <option value="$PROJECT_DIR$/app/regions/region_4.js" />
         <option value="$PROJECT_DIR$/app/regions/region_6.js" />
@@ -135,22 +189,35 @@
         <option value="$PROJECT_DIR$/app/regions/region_8.js" />
         <option value="$PROJECT_DIR$/app/regions/region_9.js" />
         <option value="$PROJECT_DIR$/app/regions/region_2.js" />
-        <option value="$PROJECT_DIR$/app/regions/region_4.html" />
-        <option value="$PROJECT_DIR$/app/regions/region_6.html" />
         <option value="$PROJECT_DIR$/app/regions/region_7.html" />
         <option value="$PROJECT_DIR$/app/china.html" />
         <option value="$PROJECT_DIR$/app/china.js" />
         <option value="$PROJECT_DIR$/app/regions/region_5.js" />
         <option value="$PROJECT_DIR$/app/regions/region_41.html" />
-        <option value="$PROJECT_DIR$/app/regions/region_5.html" />
-        <option value="$PROJECT_DIR$/main.html" />
-        <option value="$PROJECT_DIR$/app/top5.js" />
-        <option value="$PROJECT_DIR$/app/regions/region_3.html" />
-        <option value="$PROJECT_DIR$/app/regions/region_2.html" />
-        <option value="$PROJECT_DIR$/app/regions/region_1.html" />
         <option value="$PROJECT_DIR$/app/randomCountry.js" />
-        <option value="$PROJECT_DIR$/app/top5.html" />
+        <option value="$PROJECT_DIR$/app/regions/region_1.js" />
         <option value="$PROJECT_DIR$/app/randomCountry.html" />
+        <option value="$PROJECT_DIR$/app/top15to20.html" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/app/disconnected.html" />
+        <option value="$PROJECT_DIR$/app/top5.html" />
+        <option value="$PROJECT_DIR$/app/top6to10.html" />
+        <option value="$PROJECT_DIR$/app/top11to15.html" />
+        <option value="$PROJECT_DIR$/app/top16to20.html" />
+        <option value="$PROJECT_DIR$/app/top6to10.js" />
+        <option value="$PROJECT_DIR$/app/top11to15.js" />
+        <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/app/regions/region.css" />
+        <option value="$PROJECT_DIR$/app/regions/region_1.html" />
+        <option value="$PROJECT_DIR$/app/regions/region_2.html" />
+        <option value="$PROJECT_DIR$/app/regions/region_3.html" />
+        <option value="$PROJECT_DIR$/app/regions/region_4.html" />
+        <option value="$PROJECT_DIR$/app/regions/region_5.html" />
+        <option value="$PROJECT_DIR$/app/regions/region_6.html" />
+        <option value="$PROJECT_DIR$/app/top16to20.js" />
+        <option value="$PROJECT_DIR$/slideshow_old.js" />
+        <option value="$PROJECT_DIR$/app/top5.js" />
+        <option value="$PROJECT_DIR$/slideshow.js" />
       </list>
     </option>
   </component>
@@ -169,17 +236,16 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,17 +264,25 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="regions" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../complete-javascript-course/9-forkify/starter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../complete-javascript-course/9-forkify/final" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -217,6 +291,10 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Matthias\Documents\Billboad\Prototype\app" />
+      <recent name="C:\Users\Matthias\Documents\Billboad\Prototype\app\regions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Matthias\Documents\Billboad\Prototype\libs\imgs" />
     </key>
@@ -287,43 +365,46 @@
       <option name="presentableId" value="Default" />
       <updated>1549501943146</updated>
       <workItem from="1549501944848" duration="12694000" />
+      <workItem from="1549847608857" duration="980000" />
+      <workItem from="1549859784058" duration="11679000" />
+      <workItem from="1549879910511" duration="18403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12694000" />
+    <option name="totallyTimeSpent" value="43756000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13085938" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,201 +419,38 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-          <folding>
-            <element signature="e#945#964#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-          <folding>
-            <element signature="e#945#964#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding>
-            <element signature="e#760#779#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="29" column="119" lean-forward="true" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_9.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-          <folding>
-            <element signature="e#943#962#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_6.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
-          <folding>
-            <element signature="e#945#964#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/imgs/dfrc.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/imgs/dfrc.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/disconnected.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slideshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="78" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="66" column="46" lean-forward="true" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
-          <folding>
-            <element signature="e#945#964#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
-          <folding>
-            <element signature="e#945#964#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/regions/region_3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="28" column="107" selection-start-line="28" selection-start-column="107" selection-end-line="28" selection-end-column="107" />
+        <state relative-caret-position="475">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_2.js">
+    <entry file="file://$PROJECT_DIR$/app/regions/region.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-          <folding>
-            <element signature="e#945#964#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
-          <folding>
-            <element signature="e#945#964#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="25" selection-start-column="63" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="28" column="126" selection-start-line="28" selection-start-column="126" selection-end-line="28" selection-end-column="126" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/regions/region_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="950">
           <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/regions/region_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="893">
           <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/top5.js">
+    <entry file="file://$PROJECT_DIR$/app/regions/region_4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="589">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
@@ -546,37 +464,306 @@
     <entry file="file://$PROJECT_DIR$/app/slideshow.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region_3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/regions/region.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/top5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1278">
+        <state relative-caret-position="1311">
           <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/randomCountry.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
+        <state relative-caret-position="1444">
           <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+          <folding>
+            <element signature="e#945#964#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_8.js" />
+    <entry file="file://$PROJECT_DIR$/app/regions/region_8.html" />
+    <entry file="file://$PROJECT_DIR$/app/regions/region_9.html" />
+    <entry file="file://$PROJECT_DIR$/app/regions/region_9.js" />
+    <entry file="file://$PROJECT_DIR$/app/regions/region_6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/imgs/dfrc.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/imgs/dfrc.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="66" column="46" lean-forward="true" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+          <folding>
+            <element signature="e#945#964#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="107" selection-start-line="28" selection-start-column="107" selection-end-line="28" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/slideshow.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+          <folding>
+            <element signature="e#945#964#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/top5.js" />
+    <entry file="file://$PROJECT_DIR$/app/disconnected.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/randomCountry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/randomCountry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" selection-start-line="24" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top11to15.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top16to20.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top6to10.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="58" column="130" selection-start-line="58" selection-start-column="130" selection-end-line="58" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top11to15.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="55" column="130" selection-start-line="55" selection-start-column="130" selection-end-line="55" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="61" column="66" selection-start-line="61" selection-start-column="66" selection-end-line="61" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top6to10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="18" column="181" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="181" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-309">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="58" column="70" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="78" column="60" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
+          <folding>
+            <element signature="e#945#964#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+          <folding>
+            <element signature="e#945#964#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/regions/region_5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1387">
+          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top16to20.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="58" column="65" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slideshow_old.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/top5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slideshow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

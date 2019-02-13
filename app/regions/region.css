@@ -1,8 +1,32 @@
-.body { height: 100%; }
+
+
+.body {
+    height: 100%;
+    color: white;
+}
+
+/*#bg {*/
+    /*position: fixed;*/
+    /*top: -50%;*/
+    /*left: -50%;*/
+    /*width: 200%;*/
+    /*height: 200%;*/
+/*}*/
+/*#bg img {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+/*}*/
+
 
 .container {
-  min-height: 85%;
-  overflow: hidden%;
+  min-height: 100%;
+  overflow: hidden;
   font-size: 42px;
 }
 
@@ -10,12 +34,8 @@
   font-family: Impact, Charcoal, sans-serif
 }
 
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: white;
-   color: white;
-   text-align: center;
+.mapBox{
+    margin-top: 50px;
+    text-align:center;
+    display:block;
 }

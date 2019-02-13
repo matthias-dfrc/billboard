@@ -6,8 +6,8 @@ selectedDay.setDate(selectedDay.getDate() - 2);
 var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 
   // using API
-  var request = new XMLHttpRequest();
-  request.open('GET', 'https://api.analytics.lbasense.com/Nationality?user=barcelona.bb&pass=barcelona5578&siteId=793&startTime=' + selectedDay8601 + 'T00:00:00&endTime=' + selectedDay8601 + 'T23:59:59&resolution=days', true);
+var request = new XMLHttpRequest();
+request.open('GET', 'https://api.analytics.lbasense.com/Nationality?user=barcelona.bb&pass=barcelona5578&siteId=793&startTime=' + selectedDay8601 + 'T00:00:00&endTime=' + selectedDay8601 + 'T23:59:59&resolution=days', true);
 
   // When API is loaded => sorting and display
   request.onload = function () {
@@ -25,18 +25,27 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
       return bNum - aNum;
     });
     console.log(sortedVisitorCount);
-
-    // cheking data ojbect
-    console.log(data[0].data[0].visitorCount[0].populationType.countryIso);
-
+    console.log(request.status === 200);
 
     // display Top5 countries function
     (function displayTop10() {
-      //loop for listing top 10 countries
+
+        // sum on whole num of visitor
+        var sum = 0;
+        function totalNumbers (element) {
+
+            for (var i = 0; i < element.length; i++) {
+              sum += element[i].numVisitors;
+            }
+            return sum
+        }
+        totalNumbers(data[0].data[0].visitorCount);
+
+      //loop for listing top 1 to 5 countries
       for (var i = 0; i < 5; i++) {
-        var nationality = data[0].data[0].visitorCount[i].populationType.countryName
-        var nationalityIcon = data[0].data[0].visitorCount[i].populationType.countryIso
-        var visitorsNum = data[0].data[0].visitorCount[i].numVisitors
+        var nationality = data[0].data[0].visitorCount[i].populationType.countryName;
+        var nationalityIcon = data[0].data[0].visitorCount[i].populationType.countryIso;
+        var visitorsNum = data[0].data[0].visitorCount[i].numVisitors;
 
         // declare container variable
         var div = document.createElement('div');
@@ -49,13 +58,11 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
         document.querySelector('#countries').appendChild(div);
 
         // printing top 10 countries
-          var text = document.createTextNode("  " + (i+1) + ". " + nationality + ":  " + visitorsNum + "   visitors");
+          var text = document.createTextNode("  " + (i+1) + ". " + nationality + ":  " + ((visitorsNum / sum) * 100 ).toFixed(2) + "%");
           div.appendChild(text);
           document.getElementById("countries").style.marginTop = "100px";
           document.querySelector('#countries').appendChild(div);
-
-
       }
     }) ();
-  }
+  };
   request.send();

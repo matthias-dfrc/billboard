@@ -1,4 +1,8 @@
-// Auto selecting daily variable for AIP
+// Using for Auto selecting daily variable for AIP => selectedDay and selectedDay8601
+// import * as top5 from './app/top5';
+
+
+//
 var selectedDay = new Date();
 var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 
@@ -67,7 +71,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
       console.log(data);
 
        // write on the HTML FILE about Monthly visitor number of Overview API
-       var monthlyNum = data[1].thisMonthVisitorsNumber
+       var monthlyNum = data[1].thisMonthVisitorsNumber;
 
        var div = document.createElement('div');
        var monthlyNumText = document.createTextNode(monthlyNum);
@@ -75,7 +79,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
        document.querySelector('#monthlyNumber').appendChild(div);
 
        // write on the HTML FILE about yearly visitor number of Overview API
-       var yearlyNum = data[1].thisYearVisitorsNumber
+       var yearlyNum = data[1].thisYearVisitorsNumber;
        var div = document.createElement('div');
        var yearlyNumText = document.createTextNode(yearlyNum);
        div.appendChild(yearlyNumText);
