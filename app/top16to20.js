@@ -27,6 +27,7 @@ request.onload = function () {
     (function displayTop10() {
         // sum on whole num of visitor
         var sum = 0;
+
         function totalNumbers (element) {
 
             for (var i = 0; i < element.length; i++) {
@@ -34,17 +35,16 @@ request.onload = function () {
             }
             return sum
         }
-        totalNumbers(data[0].data[0].visitorCount);
+        totalNumbers(visitorCount);
 
         //loop for listing top 10 countries
-        for (var i = 16; i < 20; i++) {
-            var nationality = data[0].data[0].visitorCount[i].populationType.countryName;
-            var nationalityIcon = data[0].data[0].visitorCount[i].populationType.countryIso;
-            var visitorsNum = data[0].data[0].visitorCount[i].numVisitors;
+        for (var i = 15; i < 20; i++) {
+            var nationality = visitorCount[i].populationType.countryName;
+            var nationalityIcon = visitorCount[i].populationType.countryIso;
+            var visitorsNum = visitorCount[i].numVisitors;
 
             // declare container variable
             var div = document.createElement('div');
-            var listing = document.getElementById('countries');
 
             //creating country flag image
             var flagImage = new Image(50, 35); // ( , ) width and height

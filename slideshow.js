@@ -1,28 +1,6 @@
-// import * as top5 from './app/top5';
+// slideIndex variable controll a visibility e.g. slideIndex is 1 => region 1 is shown
 var slideIndex = 0;
-// Auto selecting day variable for AIP
-var selectedDay = new Date();
-// returing yesterdate
-selectedDay.setDate(selectedDay.getDate() - 2);
-// sorting to ISO8601 and year--month--day
-var selectedDay8601 = selectedDay.toISOString().substring(0,10);
-
-// api calling function
-function nationalityAPI() {
-    var request = new XMLHttpRequest();
-    request.open('GET', 'https://api.analytics.lbasense.com/Nationality?user=barcelona.bb&pass=barcelona5578&siteId=793&startTime=' + selectedDay8601 + 'T00:00:00&endTime=' + selectedDay8601 + 'T23:59:59&resolution=days', true);
-    if (request === true) {console.log("it is sent");}
-}
-
-// async awaiting function
-async function asyncCall() {
-    // slideIndex variable controll a visibility e.g. slideIndex is 1 => region 1 is shown
-    showSlides_top20();
-    var apiCalling = await nationalityAPI();
-}
-
-asyncCall();
-
+showSlides_top20();
 
 
 // Top 5 Slideshow function
@@ -53,7 +31,7 @@ function showSlides_top20() {
         slideIndex = 0;
         setTimeout(showSlides, 5000);
     }
-    };
+};
 
   // slides_places Slideshow function
 function showSlides() {
@@ -67,6 +45,22 @@ function showSlides() {
         slidesTotal[i].style.display = "none";
       }
       slideIndex++;
+
+        // skipping function when the daily API send a null value
+        (function skippingNullValue () {
+            var request_Overview = new XMLHttpRequest();
+
+            request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1829&platformId=2', true);
+            request_Overview.onload = function () {
+                // begin accessing JSON data here
+                var data = JSON.parse(this.response);
+                if ( data[slideIndex].visitorsNumber === 'null') {slideIndex += 1;}
+            }
+            request_Overview.send();
+
+        }) ();
+
+
       // and slide[i-1] will be shown => "block" is shown method. at first loop, first slide will be shown
       slides_places[slideIndex-1].style.display = "block";
 

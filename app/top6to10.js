@@ -36,18 +36,17 @@ request.onload = function () {
             }
             return sum
         }
-        totalNumbers(data[0].data[0].visitorCount);
+        totalNumbers(visitorCount);
 
 
         //loop for listing top 10 countries
-        for (var i = 6; i < 11; i++) {
-            var nationality = data[0].data[0].visitorCount[i].populationType.countryName;
-            var nationalityIcon = data[0].data[0].visitorCount[i].populationType.countryIso;
-            var visitorsNum = data[0].data[0].visitorCount[i].numVisitors;
+        for (var i = 5; i < 10; i++) {
+            var nationality = visitorCount[i].populationType.countryName;
+            var nationalityIcon = visitorCount[i].populationType.countryIso;
+            var visitorsNum = visitorCount[i].numVisitors;
 
             // declare container variable
             var div = document.createElement('div');
-            var listing = document.getElementById('countries');
 
             //creating country flag image
             var flagImage = new Image(50, 35); // ( , ) width and height

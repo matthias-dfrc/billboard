@@ -1,20 +1,20 @@
 {
   "name": "BIllboard_Prototype_1.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "Billboard_project",
   "main": "index.js",
   "scripts": {
     "electron": "electron .",
-    "dist": "build"
+    "dist": "build",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "electron-log": "^2.2.17"
   },
   "devDependencies": {
     "asar": "^0.13.1",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
-    "babel-preset-env": "^1.7.0",
+    "babel-preset-electron": "^1.4.15",
     "electron": "^4.0.1",
     "electron-builder": "^20.38.5"
   },
