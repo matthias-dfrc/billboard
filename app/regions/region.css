@@ -36,6 +36,10 @@
 
 .mapBox{
     margin-top: 50px;
-    text-align:center;
+    align:center;
     display:block;
+}
+
+.mapBox img {
+    alignment: center;
 }
