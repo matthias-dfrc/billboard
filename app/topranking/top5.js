@@ -1,6 +1,6 @@
 // Auto selecting day variable for AIP
   var selectedDay = new Date();
-  // returing yesterdate
+  // returing yesterday date
   selectedDay.setDate(selectedDay.getDate() - 1);
   // sorting to ISO8601 and year--month--day
   var selectedDay8601 = selectedDay.toISOString().substring(0,10);
@@ -42,7 +42,7 @@
           totalNumbers(sortedVisitorCount);
 
         //loop for listing top 1 to 5 countries
-        for (var i = 1; i < 6; i++) {
+        for (var i = 0; i < 5; i++) {
           var nationality = visitorCount[i].populationType.countryName;
           var nationalityIcon = visitorCount[i].populationType.countryIso;
           var visitorsNum = visitorCount[i].numVisitors;
@@ -58,7 +58,7 @@
           document.querySelector('#countries').appendChild(div);
 
           // printing top 10 countries
-            var text = document.createTextNode(` ${i}. ${nationality}:  ${((visitorsNum / sum) * 100 ).toFixed(2)}%`);
+            var text = document.createTextNode(` ${i+1}. ${nationality}:  ${((visitorsNum / sum) * 100 ).toFixed(2)}%`);
             div.appendChild(text);
             document.getElementById("countries").style.marginTop = "100px";
             document.querySelector('#countries').appendChild(div);

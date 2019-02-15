@@ -12,10 +12,10 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
   request_SAP.open('GET', 'https://analytics.lbasense.com/api-sap/CurrentSAPEventTypeValueForSite?user=adminservice&pass=UNZd5zNG5NKTXh8CbfB3qnVfa&siteId=793&platformId=2', true);
 
   // calling overview API
-  request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1829&platformId=2', true);
+  request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
 
   // calling dailynumbers JavaScript
-  request_DailyNumbers.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/DailyNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1829&platformId=2', true);
+  request_DailyNumbers.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/DailyNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
 
     // // using SAP_API
     // request_SAP.onload = function () {

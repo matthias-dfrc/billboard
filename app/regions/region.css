@@ -31,7 +31,9 @@
 }
 
 #regionName {
-  font-family: Impact, Charcoal, sans-serif
+  font-family: Impact, Charcoal, sans-serif;
+    padding-top: 40px;
+    font-size: 96px;
 }
 
 .mapBox{

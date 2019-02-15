@@ -12,10 +12,10 @@ var request_DailyNumbers = new XMLHttpRequest();
 request_SAP.open('GET', 'https://analytics.lbasense.com/api-sap/CurrentSAPEventTypeValueForSite?user=adminservice&pass=UNZd5zNG5NKTXh8CbfB3qnVfa&siteId=793&platformId=2', true);
 
 // calling overview API
-request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1829&platformId=2', true);
+request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
 
 // calling dailynumbers JavaScript
-request_DailyNumbers.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/DailyNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1829&platformId=2', true);
+request_DailyNumbers.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/DailyNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
 
 // // using SAP_API
 // request_SAP.onload = function () {
@@ -46,8 +46,8 @@ request_Overview.onload = function () {
     var data = JSON.parse(this.response);
 
     // write on the HTML FILE about today visitor number of Overview API
-    var todayNum = data[6].visitorsNumber;
-    var todayAvgNum = data[6].expectedVisitorsNumber;
+    var todayNum = data[9].visitorsNumber;
+    var todayAvgNum = data[9].expectedVisitorsNumber;
 
     var newText_1 = document.createTextNode(todayNum);
     var newText_2 = document.createTextNode(`(${todayAvgNum})`);
@@ -64,7 +64,7 @@ request_DailyNumbers.onload = function () {
     var data = JSON.parse(this.response);
 
     // write on the HTML FILE about Monthly visitor number of Overview API
-    var monthlyNum = data[6].thisMonthVisitorsNumber
+    var monthlyNum = data[9].thisMonthVisitorsNumber;
 
     var div = document.createElement('div');
     var monthlyNumText = document.createTextNode(monthlyNum);
@@ -72,7 +72,7 @@ request_DailyNumbers.onload = function () {
     document.querySelector('#monthlyNumber').appendChild(div);
 
     // write on the HTML FILE about yearly visitor number of Overview API
-    var yearlyNum = data[6].thisYearVisitorsNumber
+    var yearlyNum = data[9].thisYearVisitorsNumber;
     var div = document.createElement('div');
     var yearlyNumText = document.createTextNode(yearlyNum);
     div.appendChild(yearlyNumText);

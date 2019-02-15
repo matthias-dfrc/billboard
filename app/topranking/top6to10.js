@@ -40,7 +40,7 @@ request.onload = function () {
 
 
         //loop for listing top 10 countries
-        for (var i = 6; i < 11; i++) {
+        for (var i = 5; i < 10; i++) {
             var nationality = visitorCount[i].populationType.countryName;
             var nationalityIcon = visitorCount[i].populationType.countryIso;
             var visitorsNum = visitorCount[i].numVisitors;
@@ -53,8 +53,9 @@ request.onload = function () {
             flagImage.src = `../../libs/Countries/${nationalityIcon}.imageset/${nationalityIcon}.png`;
             div.appendChild(flagImage);
             document.querySelector('#countries').appendChild(div);
-// printing top 10 countries
-            var text = document.createTextNode(` ${i}. ${nationality}:  ${((visitorsNum / sum) * 100 ).toFixed(2)}%`);
+
+            // printing top 10 countries
+            var text = document.createTextNode(` ${i+1}. ${nationality}:  ${((visitorsNum / sum) * 100 ).toFixed(2)}%`);
             div.appendChild(text);
             document.getElementById("countries").style.marginTop = "100px";
             document.querySelector('#countries').appendChild(div);
