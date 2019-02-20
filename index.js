@@ -10,7 +10,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({
     fullscreen: false,
     alwaysOnTop: false,
-    autoHideMenuBar: false
+    autoHideMenuBar: true
   });
   if (auto === 1) {
   mainWindow.loadURL('file://'+__dirname+'/main.html');

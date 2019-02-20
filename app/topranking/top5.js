@@ -34,7 +34,7 @@
           var sum = 0;
           function totalNumbers (element) {
 
-              for (var i = 1; i < element.length; i++) {
+              for (var i = 0; i < element.length; i++) {
                 sum += element[i].numVisitors;
               }
               return sum
