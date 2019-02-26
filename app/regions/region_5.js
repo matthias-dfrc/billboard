@@ -40,42 +40,47 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
     // }
     // request_SAP.send();
 
-    // using Overview_API
-    request_Overview.onload = function () {
-      // begin accessing JSON data here
-      var data = JSON.parse(this.response);
+// using Overview_API
+request_Overview.onload = function () {
+    // begin accessing JSON data here
+    var data = JSON.parse(this.response);
 
-      // write on the HTML FILE about today visitor number of Overview API
-      var todayNum = data[5].visitorsNumber;
-      var todayAvgNum = data[5].expectedVisitorsNumber;
-
-      var newText_1 = document.createTextNode(todayNum);
-      var newText_2 = document.createTextNode("(" + todayAvgNum + ")");
-      var todayNumText = document.getElementById("todayNumber");
-      var todayAvgNumText = document.getElementById("todayAvgNumber");
-      todayNumText.appendChild(newText_1);
-      todayAvgNumText.appendChild(newText_2);
+    // write on the HTML FILE about today visitor number of Overview API
+    var todayNum = data[5].visitorsNumber;
+    var todayAvgNum = data[5].expectedVisitorsNumber;
+    var todayAvgCompare;
+    if (todayAvgNum > todayNum) {
+        todayAvgCompare = "less than";
+    } else if (todayAvgNum < todayNum) {
+        todayAvgCompare = "higher than";
+    } else {
+        todayAvgCompare = "as";
     }
-    request_Overview.send();
 
-    // using dailynumbers_API
-    request_DailyNumbers.onload = function () {
-      // begin accessing JSON data here
-      var data = JSON.parse(this.response);
+    var newText_1 = document.createTextNode(todayNum);
+    var newText_2 = document.createTextNode(todayAvgCompare);
+    var todayNumText = document.getElementById("todayNumber");
+    var todayAvgNumText = document.getElementById("todayAvgNumber");
+    todayNumText.appendChild(newText_1);
+    todayAvgNumText.appendChild(newText_2);
+}
+request_Overview.send();
 
-       // write on the HTML FILE about Monthly visitor number of Overview API
-       var monthlyNum = data[5].thisMonthVisitorsNumber
+// using dailynumbers_API
+request_DailyNumbers.onload = function () {
+    // begin accessing JSON data here
+    var data = JSON.parse(this.response);
+    // write on the HTML FILE about Monthly visitor number of Overview API
+    var monthlyNum = data[5].thisMonthVisitorsNumber;
+    var newText_3 = document.createTextNode(monthlyNum);
+    var monthlyNumText = document.getElementById("monthlyNumber");
+    monthlyNumText.appendChild(newText_3);
 
-       var div = document.createElement('div');
-       var monthlyNumText = document.createTextNode(monthlyNum);
-       div.appendChild(monthlyNumText);
-       document.querySelector('#monthlyNumber').appendChild(div);
+    // write on the HTML FILE about yearly visitor number of Overview API
+    var yearlyNum = data[5].thisYearVisitorsNumber;
+    var newText_4 = document.createTextNode(yearlyNum);
+    var yearlyNumText = document.getElementById("yearlyNumber");
+    yearlyNumText.appendChild(newText_4);
+};
+request_DailyNumbers.send();
 
-       // write on the HTML FILE about yearly visitor number of Overview API
-       var yearlyNum = data[5].thisYearVisitorsNumber
-       var div = document.createElement('div');
-       var yearlyNumText = document.createTextNode(yearlyNum);
-       div.appendChild(yearlyNumText);
-       document.querySelector('#yearlyNumber').appendChild(div);
-     }
-     request_DailyNumbers.send();

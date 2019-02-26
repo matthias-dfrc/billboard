@@ -7,7 +7,7 @@
 
     // using API
   var request = new XMLHttpRequest();
-  request.open('GET', `https://api.analytics.lbasense.com/Nationality?user=barcelona.bb&pass=barcelona5578&siteId=793&startTime=${selectedDay8601}T00:00:00&endTime=${selectedDay8601}T23:59:59&resolution=days`, true);
+  request.open('GET', `https://api.analytics.lbasense.com/Nationality?user=barcelona.bb&pass=barcelona5578&siteId=1900&startTime=${selectedDay8601}T00:00:00&endTime=${selectedDay8601}T23:59:59&resolution=days`, true);
 
     // When API is loaded => sorting and display
     request.onload = function () {

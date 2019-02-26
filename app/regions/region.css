@@ -27,13 +27,15 @@ body, html {
 .container {
   min-height: 100%;
   overflow: hidden;
-  font-size: 42px;
+  font-size: 38px;
+    font-family: CenturyGothic;
 }
 
 #regionName {
-  font-family: Impact, Charcoal, sans-serif;
+    font-family: CenturyGothic;
     padding-top: 40px;
     font-size: 96px;
+    font-weight: bold;
 }
 
 .mapBox{

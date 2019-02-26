@@ -48,9 +48,17 @@ request_Overview.onload = function () {
     // write on the HTML FILE about today visitor number of Overview API
     var todayNum = data[8].visitorsNumber;
     var todayAvgNum = data[8].expectedVisitorsNumber;
+    var todayAvgCompare;
+    if (todayAvgNum > todayNum) {
+        todayAvgCompare = "less than";
+    } else if (todayAvgNum < todayNum) {
+        todayAvgCompare = "higher than";
+    } else {
+        todayAvgCompare = "as";
+    }
 
     var newText_1 = document.createTextNode(todayNum);
-    var newText_2 = document.createTextNode(`(${todayAvgNum})`);
+    var newText_2 = document.createTextNode(todayAvgCompare);
     var todayNumText = document.getElementById("todayNumber");
     var todayAvgNumText = document.getElementById("todayAvgNumber");
     todayNumText.appendChild(newText_1);
@@ -64,18 +72,16 @@ request_DailyNumbers.onload = function () {
     var data = JSON.parse(this.response);
 
     // write on the HTML FILE about Monthly visitor number of Overview API
-    var monthlyNum = data[8].thisMonthVisitorsNumber
-
-    var div = document.createElement('div');
-    var monthlyNumText = document.createTextNode(monthlyNum);
-    div.appendChild(monthlyNumText);
-    document.querySelector('#monthlyNumber').appendChild(div);
+    var monthlyNum = data[8].thisMonthVisitorsNumber;
+    var newText_3 = document.createTextNode(monthlyNum);
+    var monthlyNumText = document.getElementById("monthlyNumber");
+    monthlyNumText.appendChild(newText_3);
 
     // write on the HTML FILE about yearly visitor number of Overview API
-    var yearlyNum = data[8].thisYearVisitorsNumber
-    var div = document.createElement('div');
-    var yearlyNumText = document.createTextNode(yearlyNum);
-    div.appendChild(yearlyNumText);
-    document.querySelector('#yearlyNumber').appendChild(div);
-}
+    var yearlyNum = data[8].thisYearVisitorsNumber;
+    var newText_4 = document.createTextNode(yearlyNum);
+    var yearlyNumText = document.getElementById("yearlyNumber");
+    yearlyNumText.appendChild(newText_4);
+};
 request_DailyNumbers.send();
+
