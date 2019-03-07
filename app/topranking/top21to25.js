@@ -1,7 +1,7 @@
 // Auto selecting day variable for AIP
 var selectedDay = new Date();
 // returing yesterdate
-selectedDay.setDate(selectedDay.getDate() - 1);
+selectedDay.setDate(selectedDay.getDate() - 2);
 // sorting to ISO8601 and year--month--day
 var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 

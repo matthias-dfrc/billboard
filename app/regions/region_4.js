@@ -45,8 +45,8 @@ request_Overview.onload = function () {
     // begin accessing JSON data here
     var data = JSON.parse(this.response);
     // write on the HTML FILE about today visitor number of Overview API
-    var todayNum = data[4].visitorsNumber;
-    var todayAvgNum = data[4].expectedVisitorsNumber;
+    var todayNum = data[3].visitorsNumber;
+    var todayAvgNum = data[3].expectedVisitorsNumber;
     var todayAvgCompare;
     if (todayAvgNum > todayNum) {
         todayAvgCompare = "less than";
@@ -71,13 +71,13 @@ request_DailyNumbers.onload = function () {
     var data = JSON.parse(this.response);
 
     // write on the HTML FILE about Monthly visitor number of Overview API
-    var monthlyNum = data[4].thisMonthVisitorsNumber;
+    var monthlyNum = data[3].thisMonthVisitorsNumber;
     var newText_3 = document.createTextNode(monthlyNum);
     var monthlyNumText = document.getElementById("monthlyNumber");
     monthlyNumText.appendChild(newText_3);
 
     // write on the HTML FILE about yearly visitor number of Overview API
-    var yearlyNum = data[4].thisYearVisitorsNumber;
+    var yearlyNum = data[3].thisYearVisitorsNumber;
     var newText_4 = document.createTextNode(yearlyNum);
     var yearlyNumText = document.getElementById("yearlyNumber");
     yearlyNumText.appendChild(newText_4);

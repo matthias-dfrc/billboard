@@ -1,7 +1,7 @@
 // Auto selecting day variable for AIP
   var selectedDay = new Date();
   // returing yesterday date
-  selectedDay.setDate(selectedDay.getDate() - 1);
+  selectedDay.setDate(selectedDay.getDate() - 2);
   // sorting to ISO8601 and year--month--day
   var selectedDay8601 = selectedDay.toISOString().substring(0,10);
 
@@ -13,19 +13,16 @@
     request.onload = function () {
       // begin accessing JSON data here
       var data = JSON.parse(this.response);
-      console.log(data);
 
       // sorting top 10 Countries
       var visitorCount = data[0].data[0].visitorCount;
-      console.log(visitorCount);
 
       var sortedVisitorCount = visitorCount.sort(function(a, b) {
         var aNum = parseInt(a.numVisitors);
         var bNum = parseInt(b.numVisitors);
         return bNum - aNum;
       });
-      console.log(sortedVisitorCount[1].numVisitors);
-      console.log(request.status === 200);
+      console.log(sortedVisitorCount);
 
       // display Top5 countries function
       (function displayTop10() {

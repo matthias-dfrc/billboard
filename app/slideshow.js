@@ -18,7 +18,7 @@ function showSlides_top5() {
     if (slideIndex > slides_top5.length) {slideIndex = 1}
     slides_top5[slideIndex-1].style.display = "block";
 
-    //reloading event when the internect is offline
+    //reloading event when the internet is offline
     if (navigator.onLine === false) {
       disconnectedPage();
       function disconnectedPage() {
@@ -60,7 +60,7 @@ function showSlides_top5() {
           //main slide(9 regisons slides) hide
           slidesTotal[slideIndex-1].style.display = "none";
           //show disconnectedpage
-          var disconnectedPage = document.getElementsByClassName("disconnected")
+          var disconnectedPage = document.getElementsByClassName("disconnected");
           disconnectedPage.style.display = "block";
         }
       }

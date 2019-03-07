@@ -15,10 +15,12 @@ function showSlides_TopRanking() {
     for (i = 0; i < slidesTotal.length; i++) {
       slidesTotal[i].style.display = "none";
     }
+
     slideIndex++;
     // and slide[i-1] will be shown => "block" is shown method. at first loop, first slide will be shown
     // {slideIndex = 1} is reset the loop, when it reach at final page.
     if (slideIndex > slides_TopRaking.length) {slideIndex = 1}
+
     slides_TopRaking[slideIndex-1].style.display = "block";
 
 
@@ -32,6 +34,7 @@ function showSlides_TopRanking() {
         setTimeout(showSlides, 5000);
     }
 }
+
 // slides_places Slideshow function
 function showSlides() {
 
@@ -39,26 +42,17 @@ function showSlides() {
       for (i = 0; i < slidesTotal.length; i++) {
         slidesTotal[i].style.display = "none";
       }
+
+    //Skipping Page function
+     skippingPage(slideIndex);
+
+
       slideIndex++;
 
-        // // skipping function when the daily API send a null value
-        // (function skippingNullValue (el) {
-        //     var request_Overview = new XMLHttpRequest();
-        //
-        //     request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1829&platformId=2', true);
-        //     request_Overview.onload = function () {
-        //         // begin accessing JSON data here
-        //         var data = JSON.parse(this.response);
-        //         // compare with null data
-        //         if ( data[el].visitorsNumber === 'null') {slideIndex += 1;}
-        //     };
-        //     request_Overview.send();
-        //
-        // }) (slideIndex);
-
-
+    if(slideIndex > slides_places.length) { slideIndex = slides_places.length; }
       // and slide[i-1] will be shown => "block" is shown method. at first loop, first slide will be shown
       slides_places[slideIndex-1].style.display = "block";
+
 
       //reloading event when the internet is offline
         disconnectedPage();
@@ -72,6 +66,7 @@ function showSlides() {
       }
   }
 
+
     // reloading function
   function reloading() {
     location.reload();//checking internet connection interval time 1000 = 1sec
@@ -81,6 +76,7 @@ function showSlides() {
   // Disconnecting Page showing
   function disconnectedPage() {
       if (navigator.onLine === false) {
+
           //main slide(9 regisons slides) hide
           for (i = 0; i < slidesTotal.length; i++) {
               slidesTotal[i].style.display = 'none';
@@ -91,7 +87,37 @@ function showSlides() {
 
           //setting time for try reloading e.g. 5000 is 5 seconds
           console.log('reconnecting');
-          setTimeout(reloading, 3000);
+          setTimeout(reloading, 5000);
       }
   }
 
+  // Skiping Page function
+
+    function skippingPage(el) {
+        // calling overview API
+        var request_Overview = new XMLHttpRequest();
+        request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
+
+            // using Overview_API
+            request_Overview.onload = function() {
+                // begin accessing JSON data here
+                var data = JSON.parse(this.response);
+                    for (el; el < slides_places.length; el++) {
+                        // write on the HTML FILE about today visitor number of Overview API
+                        var todayNum = data[el].visitorsNumber;
+                        var todayAvgNum = data[el].expectedVisitorsNumber;
+
+
+                        if(todayNum === null || todayAvgNum === null) {
+                            slideIndex++;
+                        } else if (todayNum === null && todayAvgNum === nuel) {
+                            slideIndex++;
+                        } else {
+                            break;
+                        }
+                    }
+                console.log(todayAvgNum);
+                console.log(slideIndex);
+            };
+            request_Overview.send();
+    }

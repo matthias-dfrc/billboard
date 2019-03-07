@@ -21,7 +21,7 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
   // calling dailynumbers JavaScript
   request_DailyNumbers.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/DailyNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
 
-    // // using SAP_API
+    // using SAP_API
     // request_SAP.onload = function () {
     //   // begin accessing JSON data here
     //   var data = JSON.parse(this.response);
@@ -52,8 +52,8 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
       console.log(data);
 
       // write on the HTML FILE about today visitor number of Overview API
-      var todayNum = data[1].visitorsNumber;
-      var todayAvgNum = data[1].expectedVisitorsNumber;
+      var todayNum = data[0].visitorsNumber;
+      var todayAvgNum = data[0].expectedVisitorsNumber;
       var todayAvgCompare;
         if (todayAvgNum > todayNum) {
             todayAvgCompare = "less than";
@@ -79,13 +79,13 @@ var selectedDay8601 = selectedDay.toISOString().substring(0,10);
       console.log(data);
 
        // write on the HTML FILE about Monthly visitor number of Overview API
-       var monthlyNum = data[1].thisMonthVisitorsNumber;
+       var monthlyNum = data[0].thisMonthVisitorsNumber;
        var newText_3 = document.createTextNode(monthlyNum);
        var monthlyNumText = document.getElementById("monthlyNumber");
        monthlyNumText.appendChild(newText_3);
 
        // write on the HTML FILE about yearly visitor number of Overview API
-       var yearlyNum = data[1].thisYearVisitorsNumber;
+       var yearlyNum = data[0].thisYearVisitorsNumber;
        var newText_4 = document.createTextNode(yearlyNum);
        var yearlyNumText = document.getElementById("yearlyNumber");
        yearlyNumText.appendChild(newText_4);
