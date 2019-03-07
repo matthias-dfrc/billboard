@@ -110,7 +110,7 @@ function showSlides() {
 
                         if(todayNum === null || todayAvgNum === null) {
                             slideIndex++;
-                        } else if (todayNum === null && todayAvgNum === nuel) {
+                        } else if (todayNum === null && todayAvgNum === null) {
                             slideIndex++;
                         } else {
                             break;

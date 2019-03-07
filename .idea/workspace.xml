@@ -3,35 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24ba6dec-e128-485f-8e6a-4563de01d776" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_10.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/regions/region_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/regions/region_9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/slideshow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/topranking/top11to15.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/topranking/top11to15.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/topranking/top16to20.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/topranking/top16to20.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/topranking/top21to25.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/topranking/top21to25.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/topranking/top5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/topranking/top5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/topranking/top6to10.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/topranking/top6to10.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Countries/CL.imageset/CL.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/CL.imageset/CL.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Countries/EE.imageset/EE.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/EE.imageset/EE.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Countries/GR.imageset/GR.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/GR.imageset/GR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Countries/IL.imageset/IL.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/IL.imageset/IL.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Countries/KW.imageset/KW.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/KW.imageset/KW.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Countries/SA.imageset/SA.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/SA.imageset/SA.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/Countries/TH.imageset/TH.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/Countries/TH.imageset/TH.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/slideshow.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,6 +28,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slideshow.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/slideshow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="112" column="76" selection-start-line="112" selection-start-column="76" selection-end-line="112" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -112,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="region_10.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="region_10.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/regions/region_10.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
@@ -126,15 +106,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="439">
               <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="top5.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/topranking/top5.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -207,7 +178,6 @@
         <option value="$PROJECT_DIR$/app/regions/region_7.js" />
         <option value="$PROJECT_DIR$/app/regions/region_1.js" />
         <option value="$PROJECT_DIR$/app/slideshow.js" />
-        <option value="$PROJECT_DIR$/slideshow.js" />
         <option value="$PROJECT_DIR$/app/topranking/top5.js" />
         <option value="$PROJECT_DIR$/app/regions/region_1.html" />
         <option value="$PROJECT_DIR$/app/regions/region_2.html" />
@@ -218,6 +188,7 @@
         <option value="$PROJECT_DIR$/app/regions/region_7.html" />
         <option value="$PROJECT_DIR$/app/regions/region_9.html" />
         <option value="$PROJECT_DIR$/app/regions/region_10.html" />
+        <option value="$PROJECT_DIR$/slideshow.js" />
       </list>
     </option>
   </component>
@@ -382,7 +353,7 @@
       <workItem from="1551077644287" duration="7914000" />
       <workItem from="1551235909741" duration="2435000" />
       <workItem from="1551747233712" duration="12243000" />
-      <workItem from="1551919955216" duration="3772000" />
+      <workItem from="1551919955216" duration="4035000" />
     </task>
     <task id="LOCAL-00001" summary="2019-02-13_02 text align to right">
       <created>1550051359704</created>
@@ -426,11 +397,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551151357746</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2019-03-07_01 apply Centry Gothic, skipping page function, fix map picture">
+      <created>1551923996299</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551923996299</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118800000" />
+    <option name="totallyTimeSpent" value="119063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -533,7 +511,8 @@
     <MESSAGE value="2019-02-15_01 change background image and reset the api siteid 1900" />
     <MESSAGE value="2019-02-20_01 apply 1900 site chagned api and fix top countries list" />
     <MESSAGE value="2019-02-26_01 apply font gothic, change region design" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-02-26_01 apply font gothic, change region design" />
+    <MESSAGE value="2019-03-07_01 apply Centry Gothic, skipping page function, fix map picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-03-07_01 apply Centry Gothic, skipping page function, fix map picture" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -786,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slideshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/topranking/top5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -866,6 +838,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="65" column="57" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slideshow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="112" column="76" selection-start-line="112" selection-start-column="76" selection-end-line="112" selection-end-column="76" />
         </state>
       </provider>
     </entry>
