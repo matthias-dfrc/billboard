@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 
 body, html {
     height: 100%;
@@ -28,11 +28,11 @@ body, html {
   min-height: 100%;
   overflow: hidden;
   font-size: 38px;
-    font-family: CenturyGothic;
+    font-family:'Century Gothic','Futura',san-serif;
 }
 
 #regionName {
-    font-family: CenturyGothic;
+    font-family:'Century Gothic','Futura',san-serif;
     padding-top: 40px;
     font-size: 96px;
     font-weight: bold;

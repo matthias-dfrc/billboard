@@ -1,3 +1,4 @@
+// global variables
 // slideIndex variable controll a visibility e.g. slideIndex is 1 => region 1 is shown
 var slideIndex = 0;
 var i;
@@ -37,35 +38,34 @@ function showSlides_TopRanking() {
 
 // slides_places Slideshow function
 function showSlides() {
+        //'slides' array have 9 region html pages, when variable 'i' is added slide[i] is hide => "none" is hide. first loop all slides are hidden
+        for (i = 0; i < slidesTotal.length; i++) {
+            slidesTotal[i].style.display = "none";
+        }
+        // var arrCount = slidesTotal.length;
+        // var currIndex = slideIndex;
+        // while (arrCount > 0 || !boolIsHadData){
+        //     var boolIsHadData = checkNex(currIndex+1);
+        // }
 
-      //'slides' array have 9 region html pages, when variable 'i' is added slide[i] is hide => "none" is hide. first loop all slides are hidden
-      for (i = 0; i < slidesTotal.length; i++) {
-        slidesTotal[i].style.display = "none";
-      }
+        checkingNext(slideIndex);
+        slideIndex++;
 
-    //Skipping Page function
-     skippingPage(slideIndex);
+        // and slide[i-1] will be shown => "block" is shown method. at first loop, first slide will be shown
+        slides_places[slideIndex - 1].style.display = "block";
+        console.log(`${slideIndex - 1} is show`);
 
-
-      slideIndex++;
-
-    if(slideIndex > slides_places.length) { slideIndex = slides_places.length; }
-      // and slide[i-1] will be shown => "block" is shown method. at first loop, first slide will be shown
-      slides_places[slideIndex-1].style.display = "block";
-
-
-      //reloading event when the internet is offline
+        //reloading event when the internet is offline
         disconnectedPage();
 
-      // Change image every 2 seconds that means showSlides function restart every 2 seconds
-      if (slideIndex < slides_places.length) {
-        setTimeout(showSlides, 3000);
-      } else {
-        slideIndex = 0;
-        setTimeout(showSlides_TopRanking, 3000);
-      }
-  }
-
+        // Change image every 2 seconds that means showSlides function restart every 2 seconds
+        if (slideIndex < slides_places.length) {
+            setTimeout(showSlides, 3000);
+        } else {
+            slideIndex = 0;
+            setTimeout(showSlides_TopRanking, 3000);
+        }
+}
 
     // reloading function
   function reloading() {
@@ -91,33 +91,26 @@ function showSlides() {
       }
   }
 
-  // Skiping Page function
+// Skiping Page function
+function checkingNext(el) {
+// calling overview API
+    var request_Overview = new XMLHttpRequest();
+    request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
 
-    function skippingPage(el) {
-        // calling overview API
-        var request_Overview = new XMLHttpRequest();
-        request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
+    // using Overview_API
+    request_Overview.onload = function () {
+        // begin accessing JSON data here
+        var data = JSON.parse(this.response);
+        for (el; el < slides_places.length; j++) {
+            var todayNum = data[(el + 1)].visitorsNumber;
+            var todayAvgNum = data[(el + 1)].expectedVisitorsNumber;
 
-            // using Overview_API
-            request_Overview.onload = function() {
-                // begin accessing JSON data here
-                var data = JSON.parse(this.response);
-                    for (el; el < slides_places.length; el++) {
-                        // write on the HTML FILE about today visitor number of Overview API
-                        var todayNum = data[el].visitorsNumber;
-                        var todayAvgNum = data[el].expectedVisitorsNumber;
-
-
-                        if(todayNum === null || todayAvgNum === null) {
-                            slideIndex++;
-                        } else if (todayNum === null && todayAvgNum === null) {
-                            slideIndex++;
-                        } else {
-                            break;
-                        }
-                    }
-                console.log(todayAvgNum);
-                console.log(slideIndex);
-            };
-            request_Overview.send();
-    }
+                if(todayNum !== null && todayAvgNum !== null) {
+                    return slideIndex;
+                } else {
+                    slideIndex++;
+                }
+        };
+        request_Overview.send();
+    };
+};

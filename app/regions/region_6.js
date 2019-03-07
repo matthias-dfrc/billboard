@@ -46,8 +46,8 @@ request_Overview.onload = function () {
     var data = JSON.parse(this.response);
 
     // write on the HTML FILE about today visitor number of Overview API
-    var todayNum = data[5].visitorsNumber;
-    var todayAvgNum = data[5].expectedVisitorsNumber;
+    var todayNum = data[6].visitorsNumber;
+    var todayAvgNum = data[6].expectedVisitorsNumber;
     var todayAvgCompare;
     if (todayAvgNum > todayNum) {
         todayAvgCompare = "less than";

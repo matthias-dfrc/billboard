@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 
 html, body { height: 100%; }
 .container {
@@ -7,13 +7,13 @@ html, body { height: 100%; }
 }
 .titletop5 {
     font-size: 80px;
-    font-family: CenturyGothic;
+    font-family:'Century Gothic','Futura',san-serif;
     margin-top: 100px;
     font-weight: bold;
 }
 .top5List {
     font-size: 40px;
-    font-family: CenturyGothic;
+    font-family:'Century Gothic','Futura',san-serif;
 }
 #countries img{
     border: 1px solid black;
