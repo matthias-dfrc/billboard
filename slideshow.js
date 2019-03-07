@@ -6,6 +6,34 @@ var slides_TopRaking = Array.prototype.slice.call(document.getElementsByClassNam
 var slides_places = Array.prototype.slice.call(document.getElementsByClassName("mySlides"), 0);
 var slidesTotal = slides_TopRaking.concat(slides_places);
 
+// checking Next Page null value.
+function checkingNext(el) {
+    // calling overview API
+    var request_Overview = new XMLHttpRequest();
+    request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', false);
+
+    // using Overview_API
+    request_Overview.onload = function () {
+        // begin accessing JSON data here
+        var data = JSON.parse(this.response);
+        for (el; el < slides_places.length; el++) {
+            var todayNum = data[(el + 1)].visitorsNumber;
+            var todayAvgNum = data[(el + 1)].expectedVisitorsNumber;
+
+            if(todayNum !== null && todayAvgNum !== null) {
+                break;
+            }
+            else {
+                slideIndex++;
+            }
+
+        }
+    };
+    request_Overview.send();
+}
+
+
+
 showSlides_TopRanking();
 
 // Top 5 Slideshow function
@@ -51,16 +79,17 @@ function showSlides() {
         checkingNext(slideIndex);
         slideIndex++;
 
+
         // and slide[i-1] will be shown => "block" is shown method. at first loop, first slide will be shown
         slides_places[slideIndex - 1].style.display = "block";
         console.log(`${slideIndex - 1} is show`);
 
         //reloading event when the internet is offline
         disconnectedPage();
-
         // Change image every 2 seconds that means showSlides function restart every 2 seconds
         if (slideIndex < slides_places.length) {
-            setTimeout(showSlides, 3000);
+
+            setTimeout(showSlides, 5000);
         } else {
             slideIndex = 0;
             setTimeout(showSlides_TopRanking, 3000);
@@ -91,26 +120,4 @@ function showSlides() {
       }
   }
 
-// Skiping Page function
-function checkingNext(el) {
-// calling overview API
-    var request_Overview = new XMLHttpRequest();
-    request_Overview.open('GET', 'https://analytics.lbasense.com/api-overview/Overview/SingleSite/HourlyDayNumbers?user=barcelona.bb&pass=barcelona5578&siteId=1900&platformId=2', true);
 
-    // using Overview_API
-    request_Overview.onload = function () {
-        // begin accessing JSON data here
-        var data = JSON.parse(this.response);
-        for (el; el < slides_places.length; j++) {
-            var todayNum = data[(el + 1)].visitorsNumber;
-            var todayAvgNum = data[(el + 1)].expectedVisitorsNumber;
-
-                if(todayNum !== null && todayAvgNum !== null) {
-                    return slideIndex;
-                } else {
-                    slideIndex++;
-                }
-        };
-        request_Overview.send();
-    };
-};
