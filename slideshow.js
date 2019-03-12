@@ -17,8 +17,8 @@ function checkingNext(el) {
         // begin accessing JSON data here
         var data = JSON.parse(this.response);
         for (el; el < slides_places.length; el++) {
-            var todayNum = data[(el + 1)].visitorsNumber;
-            var todayAvgNum = data[(el + 1)].expectedVisitorsNumber;
+            var todayNum = data[(el)].visitorsNumber;
+            var todayAvgNum = data[(el)].expectedVisitorsNumber;
 
             if(todayNum !== null && todayAvgNum !== null) {
                 break;
@@ -26,7 +26,6 @@ function checkingNext(el) {
             else {
                 slideIndex++;
             }
-
         }
     };
     request_Overview.send();
@@ -70,15 +69,10 @@ function showSlides() {
         for (i = 0; i < slidesTotal.length; i++) {
             slidesTotal[i].style.display = "none";
         }
-        // var arrCount = slidesTotal.length;
-        // var currIndex = slideIndex;
-        // while (arrCount > 0 || !boolIsHadData){
-        //     var boolIsHadData = checkNex(currIndex+1);
-        // }
-
-        checkingNext(slideIndex);
         slideIndex++;
+        checkingNext(slideIndex);
 
+        console.log(slideIndex);
 
         // and slide[i-1] will be shown => "block" is shown method. at first loop, first slide will be shown
         slides_places[slideIndex - 1].style.display = "block";
@@ -88,7 +82,6 @@ function showSlides() {
         disconnectedPage();
         // Change image every 2 seconds that means showSlides function restart every 2 seconds
         if (slideIndex < slides_places.length) {
-
             setTimeout(showSlides, 5000);
         } else {
             slideIndex = 0;
